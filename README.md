@@ -1,21 +1,15 @@
-# Kashier-WooCommerce-UI-Plugin
-### Wordpress Woocommerce  - Kashier plugin
-Kashier WooCommerce Plugin
+# Kashier-Whmcs-Plugin
+Kashier Whmcs Plugin
 
- * Version: 2.0.0
- * Requires at least: 4.4
- * Tested up to: 5.4.1
- * WC requires at least: 2.6
- * WC tested up to: 3.6.4
+ * Version: 1.0.0
+ * Tested up to: 18.5.1
 
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/kashier-logo.png)
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/woocommercew-logo.png)
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/kashier-logo.png)
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/whmcs-logo.png)
 
 ### Features
 
 - Fully PCI DSS compliant as a Level 1 Service for merchant operating in Egypt.
-
-- I-frame integration.
 
 - 3D secure cards authentication support.
 
@@ -32,14 +26,23 @@ Kashier WooCommerce Plugin
 
 ### Installation
 
-- Download [kashier.zip](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/Kashier-WooCommerce-Plugin-master.zip) 
+- Download [kashier.zip](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/kashier_whmcs.zip) 
 
+- unzip the downloaded file.
 
-- Upload and activate the plugin on Woocommerce.
+- Upload the following files to your WHMCS `modules/gateways` folder.
 
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/kashier_upload.png)
+      1. modules/gateways/kashiercard.php
+      2. modules/gateways/kashierwallet.php 
+      3. modules/gateways/kashierbankinstallment.php 
+      4. modules/gateways/kashier
+      5. modules/gateways/callback/kashiercard.php
+      6. modules/gateways/callback/kashierwallet.php 
+      7. modules/gateways/callback/kashierbankinstallment.php 
+      
+- Navigate to `Addons->Browse->Payments`
 
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/kashier_activate.png)
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/whmcs_1.png)
 
 ### Obtain Test Credentials
 
@@ -53,44 +56,29 @@ Kashier WooCommerce Plugin
 
 - Copy Merchant ID visible under your user name "MID-xx-xx".
 
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/apikey_mid_test.png)
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/apikey_mid_test.png)
 
-- Navigate to Woocommerce > settings > payments
-
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/woocommerce_payment_methods.png)
-
-- there are three payment methods added to Woocommerce > settings > payments section
+- there are three payment methods added to `Addons > Browse > Payments` section
 
 - choose payment methods which you would like to use to accept payment via kashier.
 
-- Insert the MID, Test Api Key and Test Secret Key in the Configuration page of each payment method. 
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/whmcs_2.png)
 
-- Make sure the enable checkbox is checked.
+- Insert the MID, Test Api Key in the Configuration page of each payment method. 
+
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/whmcs_3.png)
 
 - Make sure the test mode is on.
 
-- Customize the title and description that will show up to your users.
+- Customize the displayed title that will show up to your users.
 
 - Save configuration.
-
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/woocommerce_configurtion_payment.png)
-
-### Enable Advanced Options 
-
-- Enable Enforce EGP Payment checkbox to accept only EGP payment via kashier, Regardless what is the default currency displayed on your website.
-- After enabling Enforce EGP Payment checkbox , you have to insert exchange rate from your default currency displayed on your website to EGP currency. the exchange rate must be greater than 1 .
-- The next picture is example of advanced options configuration if you display USD currency by default on your website, but you want customers to only pay by EGP currency via kashier payment method. 
-
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/advanced_options.png)
 
 ### Test plugin 
 
 - Proceed to make an order on your shop, a new payment method is added . it could be changed from module configuration.
 
 - After proceeding you will find a Kashier Payment methods that you added it. choose one of them and proceed to make a payment.
-
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/checkout_methods.png)
-
 
 ### Go live
 
@@ -100,19 +88,17 @@ Kashier WooCommerce Plugin
 
 - Navigate to Integrate now section > payment api keys.
 
-- Navigate to Integrate now section > Secret keys.
-
 - Generate a new api key with your prefered name that describes your integration channel, there is 1 default api key you could use that is created when signing up.
 
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/apikey_mid_live.png)
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/apikey_mid_live.png)
 
-- Insert Live Api Key and Live Secret Key in the Configuration page of each module.
+- Insert Live Api Key in the Configuration page of each module.
 
 - Remove the test mode check.
 
 - Save configuration.
 
-![](https://raw.githubusercontent.com/Kashier-payments/Kashier-WooCommerce-UI-Plugin/main/steps/woocommerce_configuration_live.png)
+![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/whmcs_4.png)
 
 
 ### Support
