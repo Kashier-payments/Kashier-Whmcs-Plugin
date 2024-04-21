@@ -1,7 +1,7 @@
 # Kashier-Whmcs-Plugin
 Kashier Whmcs Plugin
 
- * Version: 1.0.0
+ * Version: 2.0.0
  * Tested up to: 18.5.1
 
 ![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/kashier-logo.png)
