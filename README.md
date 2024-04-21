@@ -32,13 +32,9 @@ Kashier Whmcs Plugin
 
 - Upload the following files to your WHMCS `modules/gateways` folder.
 
-      1. modules/gateways/kashiercard.php
-      2. modules/gateways/kashierwallet.php 
-      3. modules/gateways/kashierbankinstallment.php 
-      4. modules/gateways/kashier
-      5. modules/gateways/callback/kashiercard.php
-      6. modules/gateways/callback/kashierwallet.php 
-      7. modules/gateways/callback/kashierbankinstallment.php 
+      1. modules/gateways/kashier.php
+      2. modules/gateways/kashier
+      3. modules/gateways/callback/kashier.php
       
 - Navigate to `Addons->Browse->Payments`
 
