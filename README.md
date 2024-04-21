@@ -17,7 +17,8 @@ Kashier Whmcs Plugin
 
       1. Card Payments
       2. Wallet Payments 
-      3. Bank Installments Payment    
+      3. Bank Installments Payment
+      4. Fawry Payments
 
 - Support acquiring multiple currencies "EGP, USD, GBP, EUR".
 
@@ -54,9 +55,9 @@ Kashier Whmcs Plugin
 
 ![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/apikey_mid_test.png)
 
-- there are three payment methods added to `Addons > Browse > Payments` section
+- there is Kashier Payment gateway added to `Addons > Browse > Payments` section
 
-- choose payment methods which you would like to use to accept payment via kashier.
+- Activate Kashier payment gateway to accept payment via kashier.
 
 ![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/whmcs_2.png)
 
@@ -64,9 +65,11 @@ Kashier Whmcs Plugin
 
 ![](https://raw.githubusercontent.com/Kashier-payments/Kashier-Whmcs-Plugin/main/steps/whmcs_3.png)
 
-- Make sure the test mode is on.
+- Make sure you are on test mode.
 
 - Customize the displayed title that will show up to your users.
+
+- Choose which payment method you want to allow your customers to pay with via Kashier
 
 - Save configuration.
 
@@ -74,7 +77,7 @@ Kashier Whmcs Plugin
 
 - Proceed to make an order on your shop, a new payment method is added . it could be changed from module configuration.
 
-- After proceeding you will find a Kashier Payment methods that you added it. choose one of them and proceed to make a payment.
+- After proceeding you will find a Kashier Payment. choose it and proceed to make a payment.
 
 ### Go live
 
@@ -90,7 +93,7 @@ Kashier Whmcs Plugin
 
 - Insert Live Api Key in the Configuration page of each module.
 
-- Remove the test mode check.
+- change the mode from test to live.
 
 - Save configuration.
 
